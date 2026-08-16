@@ -1,54 +1,54 @@
-# 🛠️ Multi-Tool Cyber Security Script
+# Multi-Tool Cybersecurity & Utilities Suite
 
-A multi-purpose tool written in **Python** that contains several utilities related to  
-**Cyber Security & Penetration Testing** (for educational purposes only).
+A modular, multi-threaded security testing and operational automation toolkit built in Python. Designed for system diagnostics, stress testing, hash analysis, and directory reconnaissance within controlled environments.
 
----
+## Preview
 
-## ⚙️ Features
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4553174e-fb26-4f44-9604-8ff4f86f1af9" alt="Multi-Tool Interface Preview" width="100%">
+</p>
 
-This tool includes multiple modules such as:
+## Core Modules
 
-### 📧 Email Tool
-- Send emails using multiple accounts
-- Supports multi-threading
-- Uses environment variables to store passwords securely
+* **Reconnaissance & Path Enumeration:** Concurrent web application directory scanner targeting exposed administrative panels, configuration files, and API endpoints using configurable wordlists.
+* **Hash Processing & Analysis ("Jack The Reaper"):** Dynamic hash identifier, salt-aware cracker, and generator supporting MD5, SHA-1, SHA-256, SHA-512, and SHA3-512 with real-time throughput metrics.
+* **Network Stress Testing:** Multi-threaded HTTP load testing module featuring dynamic User-Agent rotation for evaluating web server resilience under traffic bursts.
+* **Automated SMTP Operations:** Threaded bulk email dispatcher supporting dynamic server authentication through secure environment variable isolation.
 
-### 🌐 DoS Testing Tool
-- Sends repeated requests to test server load tolerance
-- Random User-Agent rotation
-- Multi-threaded requests
+## Prerequisites
 
-### 🔎 Sub-Paths / Sub-Domains Scanner
-- Scans for hidden paths such as:
-  - admin
-  - login
-  - config
-  - backup
-  - api
-- Supports custom or default wordlists
-- Uses ThreadPoolExecutor for faster scanning
+* Python 3.8+
+* Third-party libraries: `rich`, `requests`, `user-agent`, `prompt_toolkit`
 
-### 🔐 Hash Tools
-- Generate hashes:
-  - MD5
-  - SHA1
-  - SHA256
-  - SHA512
-  - SHA3_512
-- Identify and compare hash types
-
-### ☠️ Jack The Reaper (Hash Cracker)
-- Crack hashes using wordlists
-- Salt support
-- Auto-detect hash type based on length
-- Calculates cracking speed and elapsed time
-
----
-
-## 📦 Requirements
-
-Install required packages:
+Install execution dependencies:
 
 ```bash
-pip install rich requests user-agent prompt_toolkit
+pip install -r requirements.txt
+```
+
+## Installation
+
+Clone the repository and access the directory:
+
+```bash
+git clone https://github.com/RDJ-120/Multi-Tool.git
+cd Multi-Tool
+```
+
+## Usage
+
+Launch the main interactive CLI interface:
+
+```bash
+python multi_tool.py
+```
+
+Select the corresponding numerical option from the main menu to initiate specific operational modules.
+
+## Disclaimer
+
+This software is strictly intended for educational testing, authorized penetration testing, and internal infrastructure analysis. Unauthorized execution against third-party systems without prior explicit consent is strictly prohibited.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for details.
