@@ -40,7 +40,7 @@ cd Multi-Tool
 Launch the main interactive CLI interface:
 
 ```bash
-python multi_tool.py
+python main.py
 ```
 
 Select the corresponding numerical option from the main menu to initiate specific operational modules.
